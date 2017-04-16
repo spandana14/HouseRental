@@ -1,0 +1,70 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<script type="text/javascript">
+function changepage()
+{
+document.getElementById("CHANGETHIS").src="register.html";
+}
+function changepage1()
+{
+document.getElementById("CHANGETHIS").src="request.html";
+}
+function changepage2()
+{
+document.getElementById("CHANGETHIS").src="property.html";
+}
+function changepage3()
+{
+document.getElementById("CHANGETHIS").src="search.html";
+}
+function changepage4()
+{
+document.getElementById("CHANGETHIS").src="contact.html";
+}
+</script>
+<style>
+h1 {
+    font-size: 400%;
+}
+</style>
+</head>
+<body id="top">
+
+<div class="wrapper col1" style="background-color:green" >
+<div id="header" >
+<div>
+<h1> Rental Portal </h1>
+</div>
+<div class="right" >
+<ul id="menu">
+<li id="menu_active"><a href="rent1.html">Home</a></li>
+<li><a href=# onclick="changepage();">Register</a></li>
+<li><a href=# onclick="changepage1();">Request Property</a></li>
+<li><a href=# onclick="changepage2();">Upload Property</a></li>
+<li><a href=# onclick="changepage3();">search</a></li>
+<li class="last"><a href=# onclick="changepage4();">Contact us</a></li>
+</ul>
+</div>
+<br class="clear" />
+</div>
+</div>
+
+
+
+<div class="wrapper col3" >
+<iframe src="home.html" width="100%" height="70%" id="CHANGETHIS" name="CHANGETHIS" scrolling=yes marginheight="0" frameborder="0" >
+</iframe>
+</div>
+
+<div class="wrapper col5" style="background-color:green">
+<div id="copyright">
+<p class="fl_left">Copyright &copy; 2015 - All Rights Reserved - <a href="#">Rental Portal</a></p>
+<br class="clear" />
+</div>
+</div>
+</body>
+</html>

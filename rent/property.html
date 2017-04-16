@@ -1,0 +1,89 @@
+<html>
+<body bgcolor="white">
+<center>
+<br><br>
+<h3  style="color:black">UPLOAD YOUR PROPERTY FOR RENT ..!</h3>
+
+<h3 style="color:white">
+<form action="property.php" method="GET">
+<table border="0">
+<tbody>
+
+<tr>
+<td><label for="username">User Name*:</label></td>
+<td><input  maxlength="45" name="username" id="f5" type="text" /></td>
+</tr>
+
+<tr>
+<td><label>Property ID:</label></td>
+<td><input  maxlength="45" name="propertyid" id="f5" type="text" /></td>
+</tr>
+
+<tr>
+<td><label>House Type*: </label></td>
+<td><select name="housetype">
+                    <option value="Apartment">Apartment</option>
+                    <option value="Bunglow">Bunglow</option>
+                  </select></td>
+</tr>
+
+<tr>
+<td><label>Address:</label></td>
+<td>
+<textarea rows="2" cols="40" name="address">
+</textarea>
+</td>
+</tr>
+
+<tr>
+<td><label>Zipcode*:</label></td>
+<td><input  maxlength="45" name="zipcode" id="f5" type="text" /></td>
+</tr>
+
+<tr>
+<td><label>Phone Number*:</label></td>
+<td><input  maxlength="45" name="phno" id="f2" type="text" /></td>
+</tr>
+
+
+<tr>
+<td><label>Short Description:</label></td>
+<td>
+<textarea rows="4" cols="30" name="address">
+</textarea>
+</td>
+</tr>
+
+<tr>
+<td><label>FACILITIES<label></td>
+<td>
+<input type="checkbox"  name="AC"/>AC<br>
+<input type="checkbox"  name="Microwave"/>Microwave<br>
+<input type="checkbox"  name="fireplace"/>fireplace<br>
+<input type="checkbox"  name="washerdryer"/>washerdryer<br>
+<input type="checkbox"  name="balcony"/>balcony<br>
+</td>
+</tr>
+
+<tr>
+<td><label>Size:</label></td>
+<td><input  maxlength="45" name="size" type="text" /></td>
+</tr>
+
+<tr>
+<td><label>Number of Bedrooms:</label></td>
+<td><input  maxlength="45" name="numbedrooms" type="text" /></td>
+</tr>
+
+<tr>
+<td align="right"><input type="submit" value="submit" name="submit" onclick="valid()">
+<input type="reset" value="Reset"></td>
+</tr>
+
+</tbody></table>
+
+</form>
+</h3>
+</center>
+</body>
+</html>

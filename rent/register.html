@@ -1,0 +1,116 @@
+<html>
+<body bgcolor="white">
+<center>
+<br><br>
+<h3  style="color:black">Register Now ..!</h3>
+
+<h3 style="color:white">
+<form action="register.php" method="GET">
+<table border="0">
+<tbody>
+
+<tr>
+<td><label for="fname">First Name*: </label></td>
+<td><input  maxlength="45" name="fname" id="f1" type="text" /></td>
+</tr>
+
+<tr>
+<td><label for="lname">Last Name: </label></td>
+<td><input  maxlength="45" name="lname"  type="text" /></td>
+</tr>
+
+<tr>
+<td><label for="username">User Name*:</label></td>
+<td><input  maxlength="45" name="username" id="f5" type="text" /></td>
+</tr>
+
+<tr>
+<td><label for="password">Password*:</label></td>
+<td><input maxlength="45" name="password" id="f4" type="password" /></td>
+</tr>
+
+<tr>
+<td><label for="email">Email Address*:</label></td>
+<td><input  maxlength="45" name="email" id="f3" type="text" /></td>
+</tr>
+
+<tr>
+<td><label for="phno">Phone Number*:</label></td>
+<td><input  maxlength="45" name="phno" id="f2" type="text" /></td>
+</tr>
+
+<tr>
+<td><label for="address">Address:</label></td>
+<td>
+<textarea rows="4" cols="30" name="address">
+</textarea>
+</td>
+</tr>
+
+<tr>
+<td><label for="zipcode">Zip code*:</label></td>
+<td><input  maxlength="45" name="zipcode" id="f6" type="text" /></td>
+</tr>
+
+<tr>
+<td align="right"><input type="submit" value="submit" name="submit" onclick="valid()">
+<input type="reset" value="Reset"></td>
+</tr>
+
+</tbody></table>
+
+</form>
+</h3>
+</center>
+<script type="text/javascript">
+var a,b,c,d,e,f;
+function valid()
+{
+a=document.getElementById("f1").value;
+if(a.length<5)
+{
+alert("length of the name should be greater than 5");
+}
+d=document.getElementById("f2").value;
+if(d.length!=10)
+{
+alert("phone number must be of 10 digits");
+}
+	for(i=0 ; i<=d.length ; i++ )
+	{
+		if(!(d[i]!='0' || d[i]!='1'||d[i]!='2'||d[i]!='3'||d[i]!='4'||d[i]!='5'||d[i]!='6'||d[i]!='7'||d[i]!='8'||d[i]!='9'))
+		{
+		alert("only digits");
+		}
+	}
+c=document.getElementById("f3").value;
+if(!c.match("@gmail.com"||"@yahoo.com"))
+{
+alert("invalid mail id");
+}
+b=document.getElemoentById("f4").value;
+if(b.length<6)
+{
+alert("password should be greater than 6");
+}
+e=document.getElementById("f5").value;
+if(e.length<6)
+{
+alert("length of the user name should be greater than 5");
+}
+f=document.getElementById("f6").value;
+if(f.length!=10)
+{
+alert("zip code must be of 5 digits");
+}
+	for(i=0 ; i<=f.length ; i++ )
+	{
+		if(!(f[i]!='0' || f[i]!='1'||f[i]!='2'||f[i]!='3'||f[i]!='4'||f[i]!='5'||f[i]!='6'||f[i]!='7'||f[i]!='8'||f[i]!='9'))
+		{
+		alert("only digits");
+		}
+	}
+}
+</script>
+</body>
+</html>
